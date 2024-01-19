@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vG1-zV-w1Z">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ibj-Fd-Eye">
+            <objects>
+                <viewController id="vG1-zV-w1Z" customClass="ViewController" customModule="exx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IJ3-VU-PqS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sf9-vG-5kr">
+                                <rect key="frame" x="76.666666666666686" y="226" width="240" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="FQB-Ao-ieR"/>
+                                    <constraint firstAttribute="height" constant="400" id="Otr-G0-zMA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJh-Ve-2eH">
+                                <rect key="frame" x="159" y="706" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="click:" destination="vG1-zV-w1Z" eventType="touchUpInside" id="fsg-bM-2oi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7CM-me-kLZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yJh-Ve-2eH" firstAttribute="top" secondItem="sf9-vG-5kr" secondAttribute="bottom" constant="80" id="0YT-HQ-SNX"/>
+                            <constraint firstItem="yJh-Ve-2eH" firstAttribute="centerX" secondItem="IJ3-VU-PqS" secondAttribute="centerX" id="EK4-nW-k10"/>
+                            <constraint firstItem="sf9-vG-5kr" firstAttribute="centerY" secondItem="IJ3-VU-PqS" secondAttribute="centerY" id="Zkc-vG-Tl2"/>
+                            <constraint firstItem="sf9-vG-5kr" firstAttribute="centerX" secondItem="IJ3-VU-PqS" secondAttribute="centerX" id="gjI-3l-J0w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardView" destination="sf9-vG-5kr" id="YbS-2y-4yE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8g-fc-q3f" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
